@@ -30,7 +30,7 @@ public class HeroAIPart3 : MonoBehaviour
     IEnumerator Skill(){
         skill = false;
         GameObject obj = Instantiate(objSkill, transform.position, quaternion.identity);
-        obj.GetComponent<SkillABC>().Skill(transform.localScale.x > 0 ? true : false);
+        obj.GetComponent<SkillABC>().Skill(transform.localScale.x > 0);
         Destroy(obj, 1.5f);
         yield return new WaitForSeconds(0.5f);
         skill = true;
