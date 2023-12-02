@@ -135,8 +135,8 @@ GameObject:
   - component: {fileID: 101531934}
   - component: {fileID: 101531933}
   - component: {fileID: 101531932}
-  - component: {fileID: 101531936}
   - component: {fileID: 101531937}
+  - component: {fileID: 101531938}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Untagged
@@ -283,21 +283,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &101531936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 101531930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffe15ae1f7d497d4ba6e8c59af0cdc9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  jump: 5
-  objSkill: {fileID: 3616104043259304893, guid: 1b331474701c14543a82dc38c67b18dc, type: 3}
 --- !u!95 &101531937
 Animator:
   serializedVersion: 5
@@ -319,6 +304,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &101531938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101531930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffe15ae1f7d497d4ba6e8c59af0cdc9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  jump: 5
+  objSkill: {fileID: 3616104043259304893, guid: 1b331474701c14543a82dc38c67b18dc, type: 3}
 --- !u!1 &292435844
 GameObject:
   m_ObjectHideFlags: 0
