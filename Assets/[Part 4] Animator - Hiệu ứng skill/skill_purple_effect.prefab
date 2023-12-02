@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 2596055361898186488}
   - component: {fileID: 7266250321632595518}
   - component: {fileID: 5275155333066081611}
-  - component: {fileID: 4696533809253289464}
+  - component: {fileID: -2792079235794359392}
   m_Layer: 0
   m_Name: skill_purple_effect
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -181,7 +181,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4696533809253289464
+--- !u!114 &-2792079235794359392
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
