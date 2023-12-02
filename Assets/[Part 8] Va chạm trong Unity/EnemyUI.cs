@@ -4,6 +4,8 @@ public class EnemyUI : MonoBehaviour
     readonly float Max = 500;
     float hp;
     [SerializeField] RectTransform rectHp;
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip audioClip;
     void Start()
     {
         hp = Max;  
@@ -11,6 +13,8 @@ public class EnemyUI : MonoBehaviour
     public void SetHp(float val){
         hp -= val;
         rectHp.sizeDelta = new Vector2(hp < Max ? hp < 0 ? 0 : hp : Max, 26);
-        if(hp <= 0) Destroy(gameObject);
+        audioSource.clip = audioClip;
+        audioSource.Play();
+        if (hp <= 0) Destroy(gameObject);
     }
 }
