@@ -1,5 +1,4 @@
 using UnityEngine;
-
 public class EnemyUI : MonoBehaviour
 {
     readonly float Max = 500;
@@ -7,12 +6,11 @@ public class EnemyUI : MonoBehaviour
     [SerializeField] RectTransform rectHp;
     void Start()
     {
-        hp = Max;
+        hp = Max;  
     }
-    public void SetHp(float val)
-    {
+    public void SetHp(float val){
         hp -= val;
-        rectHp.sizeDelta = new Vector2(hp < Max ? val < 0 ? 0 : hp : Max, 26);
-        if (hp <= 0) Destroy(gameObject);
+        rectHp.sizeDelta = new Vector2(hp < Max ? hp < 0 ? 0 : hp : Max, 26);
+        if(hp <= 0) Destroy(gameObject);
     }
 }
